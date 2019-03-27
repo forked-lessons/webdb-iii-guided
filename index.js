@@ -6,9 +6,9 @@ const knex = require('knex');
 const knexConfig = {
   client: 'sqlite3',
   connection: {
-    filename: './data/rolex.db3',
+    filename: './data/rolex.db3'
   },
-  useNullAsDefault: true, // needed for sqlite
+  useNullAsDefault: true // needed for sqlite
 };
 const db = knex(knexConfig);
 
@@ -42,7 +42,7 @@ server.get('/api/roles/:id', async (req, res) => {
 });
 
 const errors = {
-  '19': 'Another record with that value exists',
+  '19': 'Another record with that value exists'
 };
 
 // create roles
